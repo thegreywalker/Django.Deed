@@ -20,6 +20,6 @@ from . import views
 
 urlpatterns = [
     path("<int:month>", views.monthly_challenge_by_number, name="Monthly_Challenge_By_Number"),
-    path("<str:month>", views.monthly_challenge, name="Monthly_Challenges")
-
+    path("<str:month>", views.monthly_challenge, name="Monthly_Challenges"),
+    path("", views.index, name="Monthly_Challenger_Index_Page")
 ]
